@@ -2,18 +2,18 @@ output "vpc_id" {
   value = aws_vpc.main.id
 }
 
-output "public_subnet_id" {
+output "public_subnet_ids" {
   value = aws_subnet.public.*.id
 }
 
-output  "web_subnet_id" {
+output  "web_subnet_ids" {
   value = aws_subnet.web.*.id
 }
 
-output "app_subnet_id" {
+output "app_subnet_ids" {
   value  = aws_subnet.app.*.id
 }
 
-output "db_subnet_id" {
+output "db_subnet_ids" {
   value = aws_subnet.db.*.id
 }
